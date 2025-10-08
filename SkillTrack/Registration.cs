@@ -86,8 +86,8 @@ namespace SkillTrack
                 contactNo = int.Parse(contactNo.Text)
             };
 
-            CRUD crud = new CRUD();
-            if (crud.AddStudent(student))
+            Services ser = new Services();
+            if (ser.AddStudent(student))
                 MessageBox.Show("Record Added Successfully",
                  "Success",
                  MessageBoxButtons.OK,
@@ -97,6 +97,8 @@ namespace SkillTrack
                 MessageBox.Show("❌ Registration Failed");
         }
 
+
+        //Exit linklabel
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             DialogResult dialog = MessageBox.Show(
@@ -116,6 +118,7 @@ namespace SkillTrack
             }
         }
 
+        //Home btn
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -125,7 +128,22 @@ namespace SkillTrack
 
         private void LogOutLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-           
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+        }
+
+        private void updateBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Update update = new Update();
+            update.Show();  
+        }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {   this.Hide();
+            Delete delete = new Delete();
+            delete.Show();
         }
     }
 }

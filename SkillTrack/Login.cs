@@ -107,5 +107,10 @@ namespace SkillTrack
                 // Do nothing, message box will automatically close
             }
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     } // <-- closes class
 } // <-- closes namespace

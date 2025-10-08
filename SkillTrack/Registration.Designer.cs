@@ -30,6 +30,7 @@
         {
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Home = new System.Windows.Forms.Button();
             this.deleteBtn = new System.Windows.Forms.Button();
             this.clearBtn = new System.Windows.Forms.Button();
             this.updateBtn = new System.Windows.Forms.Button();
@@ -64,7 +65,6 @@
             this.firstName = new System.Windows.Forms.TextBox();
             this.LogOutLabel = new System.Windows.Forms.LinkLabel();
             this.ExitLabel = new System.Windows.Forms.LinkLabel();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -83,7 +83,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.Home);
             this.groupBox1.Controls.Add(this.deleteBtn);
             this.groupBox1.Controls.Add(this.clearBtn);
             this.groupBox1.Controls.Add(this.updateBtn);
@@ -101,6 +101,16 @@
             this.groupBox1.Text = " Student Registration";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter_1);
             // 
+            // Home
+            // 
+            this.Home.Location = new System.Drawing.Point(229, 690);
+            this.Home.Name = "Home";
+            this.Home.Size = new System.Drawing.Size(154, 66);
+            this.Home.TabIndex = 21;
+            this.Home.Text = " 🏠 Home";
+            this.Home.UseVisualStyleBackColor = true;
+            this.Home.Click += new System.EventHandler(this.button1_Click);
+            // 
             // deleteBtn
             // 
             this.deleteBtn.Location = new System.Drawing.Point(511, 711);
@@ -109,6 +119,7 @@
             this.deleteBtn.TabIndex = 20;
             this.deleteBtn.Text = " Delete";
             this.deleteBtn.UseVisualStyleBackColor = true;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
             // clearBtn
             // 
@@ -122,12 +133,13 @@
             // 
             // updateBtn
             // 
-            this.updateBtn.Location = new System.Drawing.Point(113, 711);
+            this.updateBtn.Location = new System.Drawing.Point(118, 711);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(90, 45);
             this.updateBtn.TabIndex = 18;
             this.updateBtn.Text = " Update";
             this.updateBtn.UseVisualStyleBackColor = true;
+            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
             // registerBtn
             // 
@@ -422,16 +434,6 @@
             this.ExitLabel.Text = " Exit";
             this.ExitLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(229, 690);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 66);
-            this.button1.TabIndex = 21;
-            this.button1.Text = " 🏠 Home";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -495,6 +497,6 @@
         private System.Windows.Forms.Button clearBtn;
         private System.Windows.Forms.Button updateBtn;
         private System.Windows.Forms.Button registerBtn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Home;
     }
 }

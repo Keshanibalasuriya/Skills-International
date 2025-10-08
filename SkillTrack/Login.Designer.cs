@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Clear = new System.Windows.Forms.Button();
+            this.login_btn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pwdtext = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.unametext = new System.Windows.Forms.TextBox();
             this.Exit = new System.Windows.Forms.Button();
-            this.Clear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +55,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.Clear);
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.login_btn);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.pwdtext);
             this.groupBox1.Controls.Add(this.label1);
@@ -68,15 +68,25 @@
             this.groupBox1.Text = "Login";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // button2
+            // Clear
             // 
-            this.button2.Location = new System.Drawing.Point(233, 197);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 45);
-            this.button2.TabIndex = 5;
-            this.button2.Text = " Login";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Clear.Location = new System.Drawing.Point(6, 197);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(90, 45);
+            this.Clear.TabIndex = 7;
+            this.Clear.Text = " Clear";
+            this.Clear.UseVisualStyleBackColor = true;
+            this.Clear.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // login_btn
+            // 
+            this.login_btn.Location = new System.Drawing.Point(233, 197);
+            this.login_btn.Name = "login_btn";
+            this.login_btn.Size = new System.Drawing.Size(90, 45);
+            this.login_btn.TabIndex = 5;
+            this.login_btn.Text = " Login";
+            this.login_btn.UseVisualStyleBackColor = true;
+            this.login_btn.Click += new System.EventHandler(this.button2_Click);
             // 
             // label2
             // 
@@ -123,16 +133,6 @@
             this.Exit.UseVisualStyleBackColor = true;
             this.Exit.Click += new System.EventHandler(this.button3_Click);
             // 
-            // Clear
-            // 
-            this.Clear.Location = new System.Drawing.Point(6, 197);
-            this.Clear.Name = "Clear";
-            this.Clear.Size = new System.Drawing.Size(90, 45);
-            this.Clear.TabIndex = 7;
-            this.Clear.Text = " Clear";
-            this.Clear.UseVisualStyleBackColor = true;
-            this.Clear.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -146,6 +146,7 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login- Skills International";
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -161,7 +162,7 @@
         private System.Windows.Forms.TextBox unametext;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox pwdtext;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button login_btn;
         private System.Windows.Forms.Button Exit;
         private System.Windows.Forms.Button Clear;
     }
