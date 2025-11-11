@@ -46,9 +46,11 @@
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.IndianRed;
             this.button2.Location = new System.Drawing.Point(13, 324);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(266, 47);
+            this.button2.Size = new System.Drawing.Size(183, 52);
             this.button2.TabIndex = 23;
             this.button2.Text = " 🏠 Home";
             this.button2.UseVisualStyleBackColor = true;
@@ -56,9 +58,11 @@
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.IndianRed;
             this.button1.Location = new System.Drawing.Point(925, 324);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(266, 47);
+            this.button1.Size = new System.Drawing.Size(183, 52);
             this.button1.TabIndex = 24;
             this.button1.Text = " Delete";
             this.button1.UseVisualStyleBackColor = true;
@@ -73,6 +77,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Delete";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Delete";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

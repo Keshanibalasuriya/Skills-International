@@ -60,6 +60,7 @@
             this.groupBox1.Controls.Add(this.pwdtext);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.unametext);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(86, 117);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(347, 260);
@@ -70,6 +71,8 @@
             // 
             // Clear
             // 
+            this.Clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clear.ForeColor = System.Drawing.Color.SteelBlue;
             this.Clear.Location = new System.Drawing.Point(6, 197);
             this.Clear.Name = "Clear";
             this.Clear.Size = new System.Drawing.Size(90, 45);
@@ -80,6 +83,8 @@
             // 
             // login_btn
             // 
+            this.login_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_btn.ForeColor = System.Drawing.Color.SteelBlue;
             this.login_btn.Location = new System.Drawing.Point(233, 197);
             this.login_btn.Name = "login_btn";
             this.login_btn.Size = new System.Drawing.Size(90, 45);
@@ -91,40 +96,44 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(24, 113);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 16);
+            this.label2.Size = new System.Drawing.Size(83, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Password";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pwdtext
             // 
-            this.pwdtext.Location = new System.Drawing.Point(113, 110);
+            this.pwdtext.Location = new System.Drawing.Point(128, 107);
             this.pwdtext.Name = "pwdtext";
-            this.pwdtext.Size = new System.Drawing.Size(195, 22);
+            this.pwdtext.Size = new System.Drawing.Size(195, 27);
             this.pwdtext.TabIndex = 2;
             this.pwdtext.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(24, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 16);
+            this.label1.Size = new System.Drawing.Size(86, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Username";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // unametext
             // 
-            this.unametext.Location = new System.Drawing.Point(113, 54);
+            this.unametext.Location = new System.Drawing.Point(128, 55);
             this.unametext.Name = "unametext";
-            this.unametext.Size = new System.Drawing.Size(195, 22);
+            this.unametext.Size = new System.Drawing.Size(195, 27);
             this.unametext.TabIndex = 0;
             // 
             // Exit
             // 
+            this.Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit.ForeColor = System.Drawing.Color.Crimson;
             this.Exit.Location = new System.Drawing.Point(12, 429);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(90, 45);

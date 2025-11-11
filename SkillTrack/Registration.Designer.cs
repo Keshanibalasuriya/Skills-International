@@ -103,9 +103,11 @@
             // 
             // Home
             // 
-            this.Home.Location = new System.Drawing.Point(229, 690);
+            this.Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Home.ForeColor = System.Drawing.Color.IndianRed;
+            this.Home.Location = new System.Drawing.Point(234, 711);
             this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(154, 66);
+            this.Home.Size = new System.Drawing.Size(154, 45);
             this.Home.TabIndex = 21;
             this.Home.Text = " 🏠 Home";
             this.Home.UseVisualStyleBackColor = true;
@@ -113,6 +115,8 @@
             // 
             // deleteBtn
             // 
+            this.deleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteBtn.ForeColor = System.Drawing.Color.SteelBlue;
             this.deleteBtn.Location = new System.Drawing.Point(511, 711);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(90, 45);
@@ -123,6 +127,8 @@
             // 
             // clearBtn
             // 
+            this.clearBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearBtn.ForeColor = System.Drawing.Color.SteelBlue;
             this.clearBtn.Location = new System.Drawing.Point(415, 711);
             this.clearBtn.Name = "clearBtn";
             this.clearBtn.Size = new System.Drawing.Size(90, 45);
@@ -133,6 +139,8 @@
             // 
             // updateBtn
             // 
+            this.updateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateBtn.ForeColor = System.Drawing.Color.SteelBlue;
             this.updateBtn.Location = new System.Drawing.Point(118, 711);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(90, 45);
@@ -143,6 +151,8 @@
             // 
             // registerBtn
             // 
+            this.registerBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerBtn.ForeColor = System.Drawing.Color.SteelBlue;
             this.registerBtn.Location = new System.Drawing.Point(7, 711);
             this.registerBtn.Name = "registerBtn";
             this.registerBtn.Size = new System.Drawing.Size(90, 45);

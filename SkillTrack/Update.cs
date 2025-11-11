@@ -157,5 +157,78 @@ namespace SkillTrack
             Home home = new Home();
             home.Show();
         }
+
+        // Home button click event handler -> redirect to Home form
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home home = new Home();
+            home.Show();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+            try
+            {
+                Connection db = new Connection();
+                using (SqlConnection con = db.GetConnection())
+                {
+                    con.Open();
+
+                    string query = @"UPDATE Registration 
+                                     SET firstName = @firstName,
+                                         lastName = @lastName,
+                                         dateOfBirth = @dateOfBirth,
+                                         gender = @gender,
+                                         address = @address,
+                                         email = @email,
+                                         mobilePhone = @mobilePhone,
+                                         homePhone = @homePhone,
+                                         parentName = @parentName,
+                                         nic = @nic,
+                                         contactNo = @contactNo
+                                     WHERE regNo = @regNo";
+
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@regNo", regNo.Text);
+                        cmd.Parameters.AddWithValue("@firstName", firstName.Text);
+                        cmd.Parameters.AddWithValue("@lastName", lastName.Text);
+                        cmd.Parameters.AddWithValue("@dateOfBirth", dateOfBirth.Value);
+
+                        string selectedGender = male.Checked ? "Male" : female.Checked ? "Female" : "";
+                        cmd.Parameters.AddWithValue("@gender", selectedGender);
+
+                        cmd.Parameters.AddWithValue("@address", address.Text);
+                        cmd.Parameters.AddWithValue("@email", email.Text);
+                        cmd.Parameters.AddWithValue("@mobilePhone", mobilePhone.Text);
+                        cmd.Parameters.AddWithValue("@homePhone", homePhone.Text);
+                        cmd.Parameters.AddWithValue("@parentName", parentName.Text);
+                        cmd.Parameters.AddWithValue("@nic", nic.Text);
+                        cmd.Parameters.AddWithValue("@contactNo", contactNo.Text);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Record updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            RefreshGrid();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No record updated. Please check the Reg No.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
     }
 }
+

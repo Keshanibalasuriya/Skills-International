@@ -49,7 +49,7 @@
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.IndianRed;
-            this.button4.Location = new System.Drawing.Point(1084, 466);
+            this.button4.Location = new System.Drawing.Point(1281, 466);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(183, 52);
             this.button4.TabIndex = 9;
